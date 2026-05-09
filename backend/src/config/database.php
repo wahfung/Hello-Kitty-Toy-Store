@@ -16,7 +16,7 @@ class Database {
     private $charset = 'utf8mb4';
 
     private function __construct() {
-        $this->host = getenv('DB_HOST') ?: 'db';
+        $this->host = getenv('DB_HOST') ?: '127.0.0.1';
         $this->dbname = getenv('DB_NAME') ?: 'hellokitty_shop';
         $this->username = getenv('DB_USER') ?: 'kitty';
         $this->password = getenv('DB_PASS') ?: 'kitty123';
